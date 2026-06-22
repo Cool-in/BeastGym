@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beast Training Center | Premium High-Performance Gym & Sanctuary</title>
+    <meta name="description" content="Welcome to BEAST Fitness, a world-class training facility offering state-of-the-art equipment, elite personal trainers, and luxury amenities. Experience high-performance fitness.">
+    
+    <!-- Google Fonts: Archivo for bold athletic headings, Space Grotesk for sharp clean body text, Space Mono for details -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <!-- LOGO SECTION -->
+            <a href="#" class="logo" id="logo-link">
+                <img src="assets/logo_mark.jpg" alt="Beast Training Center Logo" class="logo-img">
+                <span class="logo-text">BEAST <span class="gradient-text">TRAINING CENTER</span></span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#rates" class="nav-link">Rates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Action Controls (Theme switch + CTA button) -->
+            <div class="header-controls">
+                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle light/dark theme">
+                    <svg class="icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <a href="#rates" class="btn btn-header btn-primary-gradient">Join Now</a>
+                
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">EST. 2026 // ELITE HIGH-PERFORMANCE TRAINING</span>
+                    <h1 class="hero-title">
+                        ELCHE'S HIGH<br>
+                        <span class="outline-text">PERFORMANCE GYM</span>
+                    </h1>
+                    <p class="hero-description">Welcome to BEAST Training Center. Elche's premier high-performance training facility engineered for those who demand elite results. Experience custom-calibrated biomechanical equipment, heavy lifting zones, and world-class athletic coaching in Alicante.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#rates" class="btn btn-lg btn-primary-gradient shadow-pulse">Join BEAST</a>
+                        <a href="#schedule" class="btn btn-lg btn-outline">Explore Classes</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating Stats Bar (Editorial touch) -->
+            <div class="hero-stats-bar">
+                <div class="container stats-bar-container">
+                    <div class="stat-item">
+                        <span class="stat-num">12,000 SQFT</span>
+                        <span class="stat-lbl">HIGH-PERFORMANCE FACILITY</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">24 / 7</span>
+                        <span class="stat-lbl">BIOMETRIC SANCTUARY ACCESS</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">04 TIERS</span>
+                        <span class="stat-lbl">ACTIVE TRAINING ZONES</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Beast Philosophy</span>
+                    <h2 class="section-title">THE TRAINING ECOSYSTEM</h2>
+                    <p class="section-desc">We replaced standard gym standards with an architectural and biomechanical marvel calibrated to fuel high performance.</p>
+                </div>
+                
+                <!-- Asymmetrical Bento Grid -->
+                <div class="bento-grid">
+                    <!-- Cell 1: Large Text Focus (Span 2 Cols) -->
+                    <div class="bento-cell col-span-2 bento-image-cell glow-card" style="background-image: url('assets/bst_shirts.jpg');">
+                        <div class="bento-image-overlay"></div>
+                        <div class="bento-image-content">
+                            <span class="bento-num text-primary-color">01 / BRAND</span>
+                            <h3 class="bento-headline text-white">OFFICIAL BEAST WEAR</h3>
+                            <p class="bento-text text-light">Train like a beast, dress like one. Discover our premium in-house collection of Beast Training Center tees, custom-engineered for heavy lifting and maximum durability.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cell 2: Small Text Focus (Span 1 Col) -->
+                    <div class="bento-cell bento-image-cell glow-card" style="background-image: url('assets/bst_flags.jpg');">
+                        <div class="bento-image-overlay"></div>
+                        <div class="bento-image-content">
+                            <span class="bento-num text-primary-color">02 / STRENGTH</span>
+                            <h3 class="bento-headline text-white">PLATE-LOADED POWER</h3>
+                            <p class="bento-text text-light">Push your physical limits on high-performance plate-loaded chest presses and lifting platforms calibrated for heavy muscle loading.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cell 3: Small Text Focus (Span 1 Col) -->
+                    <div class="bento-cell bento-image-cell glow-card" style="background-image: url('assets/bst_legpress.jpg');">
+                        <div class="bento-image-overlay"></div>
+                        <div class="bento-image-content">
+                            <span class="bento-num text-primary-color">03 / LOWER BODY</span>
+                            <h3 class="bento-headline text-white">THE LEG PRESS DECK</h3>
+                            <p class="bento-text text-light">Calibrate your quad power. Train on heavy plate-loaded incline leg presses and hack squats under custom-calibrated blue neon branding.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cell 4: Large Focus with Background Image overlay (Span 2 Cols) -->
+                    <div class="bento-cell col-span-2 bento-image-cell glow-card" style="background-image: url('assets/bst_hero.jpg'); background-position: center 15%;">
+                        <div class="bento-image-overlay"></div>
+                        <div class="bento-image-content">
+                            <span class="bento-num text-primary-color">04 / CABLE SYSTEM</span>
+                            <h3 class="bento-headline text-white">BEAST CABLE ARENA</h3>
+                            <p class="bento-text text-light">Access full multi-angle cable crossover stations equipped with smooth, low-friction pulley setups for clean, continuous muscular tension.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classes Schedule Section (Horizontal timetable list) -->
+        <section class="schedule-section" id="schedule">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Daily Blocks</span>
+                    <h2 class="section-title">TIMETABLE</h2>
+                    <p class="section-desc">Fully optimized coaching times. Choose a session to test your limits.</p>
+                </div>
+
+                <!-- Schedule Nav Tabs -->
+                <div class="schedule-tabs-container">
+                    <div class="schedule-tabs" id="schedule-tabs">
+                        <button class="schedule-tab-btn active" data-day="monday">Mon</button>
+                        <button class="schedule-tab-btn" data-day="tuesday">Tue</button>
+                        <button class="schedule-tab-btn" data-day="wednesday">Wed</button>
+                        <button class="schedule-tab-btn" data-day="thursday">Thu</button>
+                        <button class="schedule-tab-btn" data-day="friday">Fri</button>
+                        <button class="schedule-tab-btn" data-day="saturday">Sat</button>
+                        <button class="schedule-tab-btn" data-day="sunday">Sun</button>
+                        <!-- Floating Active Bar -->
+                        <div class="tabs-active-bar"></div>
+                    </div>
+                </div>
+
+                <!-- Schedule Panels Container -->
+                <div class="schedule-panels-wrapper">
+                    <!-- Monday Panel -->
+                    <div class="schedule-panel active" id="panel-monday">
+                        <div class="schedule-list">
+                            <!-- Timetable Row 1 -->
+                            <div class="schedule-row-item">
+                                <div class="row-time">06:00 AM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Strength Conditioning</h3>
+                                    <span class="row-coach">Coach Michael Vance</span>
+                                </div>
+                                <span class="row-tag strength">Strength</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">04 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                            <!-- Timetable Row 2 -->
+                            <div class="schedule-row-item">
+                                <div class="row-time">08:30 AM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">HIIT Blast</h3>
+                                    <span class="row-coach">Coach Sarah Jenkins</span>
+                                </div>
+                                <span class="row-tag cardio">Cardio</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">12 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                            <!-- Timetable Row 3 -->
+                            <div class="schedule-row-item">
+                                <div class="row-time">12:00 PM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">CrossFit WOD</h3>
+                                    <span class="row-coach">Coach Alex Reed</span>
+                                </div>
+                                <span class="row-tag functional">CrossFit</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots text-red">FULL</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline disabled">Waitlist</a>
+                                </div>
+                            </div>
+                            <!-- Timetable Row 4 -->
+                            <div class="schedule-row-item">
+                                <div class="row-time">06:30 PM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Striking Fundamentals</h3>
+                                    <span class="row-coach">Coach Victor Kross</span>
+                                </div>
+                                <span class="row-tag combat">Boxing</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">08 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tuesday Panel -->
+                    <div class="schedule-panel" id="panel-tuesday">
+                        <div class="schedule-list">
+                            <div class="schedule-row-item">
+                                <div class="row-time">07:00 AM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Cardio Endurance</h3>
+                                    <span class="row-coach">Coach Sarah Jenkins</span>
+                                </div>
+                                <span class="row-tag cardio">Cardio</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">15 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                            <div class="schedule-row-item">
+                                <div class="row-time">12:00 PM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Olympic Lifting</h3>
+                                    <span class="row-coach">Coach Michael Vance</span>
+                                </div>
+                                <span class="row-tag strength">Strength</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">02 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                            <div class="schedule-row-item">
+                                <div class="row-time">05:30 PM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">CrossFit Engine</h3>
+                                    <span class="row-coach">Coach Alex Reed</span>
+                                </div>
+                                <span class="row-tag functional">CrossFit</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">05 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wednesday Panel -->
+                    <div class="schedule-panel" id="panel-wednesday">
+                        <div class="schedule-list">
+                            <div class="schedule-row-item">
+                                <div class="row-time">06:00 AM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Strength Conditioning</h3>
+                                    <span class="row-coach">Coach Michael Vance</span>
+                                </div>
+                                <span class="row-tag strength">Strength</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">03 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                            <div class="schedule-row-item">
+                                <div class="row-time">12:00 PM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">CrossFit WOD</h3>
+                                    <span class="row-coach">Coach Alex Reed</span>
+                                </div>
+                                <span class="row-tag functional">CrossFit</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">02 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                            <div class="schedule-row-item">
+                                <div class="row-time">06:30 PM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Striking Fundamentals</h3>
+                                    <span class="row-coach">Coach Victor Kross</span>
+                                </div>
+                                <span class="row-tag combat">Boxing</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">06 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thursday Panel -->
+                    <div class="schedule-panel" id="panel-thursday">
+                        <div class="schedule-list">
+                            <div class="schedule-row-item">
+                                <div class="row-time">07:00 AM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Cardio Endurance</h3>
+                                    <span class="row-coach">Coach Sarah Jenkins</span>
+                                </div>
+                                <span class="row-tag cardio">Cardio</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">10 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                            <div class="schedule-row-item">
+                                <div class="row-time">05:30 PM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">CrossFit Engine</h3>
+                                    <span class="row-coach">Coach Alex Reed</span>
+                                </div>
+                                <span class="row-tag functional">CrossFit</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">08 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Friday Panel -->
+                    <div class="schedule-panel" id="panel-friday">
+                        <div class="schedule-list">
+                            <div class="schedule-row-item">
+                                <div class="row-time">06:00 AM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Strength Conditioning</h3>
+                                    <span class="row-coach">Coach Michael Vance</span>
+                                </div>
+                                <span class="row-tag strength">Strength</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">05 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                            <div class="schedule-row-item">
+                                <div class="row-time">12:00 PM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">CrossFit WOD</h3>
+                                    <span class="row-coach">Coach Alex Reed</span>
+                                </div>
+                                <span class="row-tag functional">CrossFit</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots text-red">FULL</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline disabled">Waitlist</a>
+                                </div>
+                            </div>
+                            <div class="schedule-row-item">
+                                <div class="row-time">06:30 PM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Striking Fundamentals</h3>
+                                    <span class="row-coach">Coach Victor Kross</span>
+                                </div>
+                                <span class="row-tag combat">Boxing</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">10 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saturday Panel -->
+                    <div class="schedule-panel" id="panel-saturday">
+                        <div class="schedule-list">
+                            <div class="schedule-row-item">
+                                <div class="row-time">09:00 AM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Weekend Warrior CrossFit</h3>
+                                    <span class="row-coach">Coach Alex Reed</span>
+                                </div>
+                                <span class="row-tag functional">CrossFit</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">12 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                            <div class="schedule-row-item">
+                                <div class="row-time">11:00 AM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Heavyweight Sparring</h3>
+                                    <span class="row-coach">Coach Victor Kross</span>
+                                </div>
+                                <span class="row-tag combat">Boxing</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">04 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sunday Panel -->
+                    <div class="schedule-panel" id="panel-sunday">
+                        <div class="schedule-list">
+                            <div class="schedule-row-item">
+                                <div class="row-time">10:00 AM</div>
+                                <div class="row-class-details">
+                                    <h3 class="row-class-title">Powerlifting Max Out</h3>
+                                    <span class="row-coach">Coach Michael Vance</span>
+                                </div>
+                                <span class="row-tag strength">Strength</span>
+                                <div class="row-action-block">
+                                    <span class="row-slots">06 SLOTS LEFT</span>
+                                    <a href="#contact" class="btn btn-sm btn-outline">Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Visual Tour</span>
+                    <h2 class="section-title">THE FACILITY</h2>
+                    <p class="section-desc">Peek inside our state-of-the-art training zones engineered for raw aesthetics and functionality.</p>
+                </div>
+
+                <!-- Gallery Category Filters -->
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="strength">Strength Floor</button>
+                    <button class="filter-btn" data-filter="lockers">Locker Room</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Item 1 (Strength - Dumbbells) -->
+                    <div class="gallery-item" data-category="strength">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/bst_dumbbells.jpg" alt="Premium BEAST dumbbells rack with neon blue underglow" loading="lazy" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4 class="gallery-item-title">Dumbbell Deck</h4>
+                                    <p class="gallery-item-cat">Calibrated Weights & Bench Stations</p>
+                                </div>
+                                <button class="gallery-zoom-btn" aria-label="Zoom Image">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zoom-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 (Lockers) -->
+                    <div class="gallery-item" data-category="lockers" style="display: none; opacity: 0;">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/bst_locker.jpg" alt="Modern clean changing room and shower" loading="lazy" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4 class="gallery-item-title">Locker Room</h4>
+                                    <p class="gallery-item-cat">Premium Changing & Shower Suite</p>
+                                </div>
+                                <button class="gallery-zoom-btn" aria-label="Zoom Image">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zoom-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2b (Lockers - Washroom) -->
+                    <div class="gallery-item" data-category="lockers" style="display: none; opacity: 0;">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/bst_bathroom.jpg" alt="Premium modern washroom with backlit mirror and sink" loading="lazy" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4 class="gallery-item-title">Premium Washroom</h4>
+                                    <p class="gallery-item-cat">Locker Room & Amenities</p>
+                                </div>
+                                <button class="gallery-zoom-btn" aria-label="Zoom Image">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zoom-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 (Strength - Squat Racks) -->
+                    <div class="gallery-item" data-category="strength">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/bst_racks.jpg" alt="High performance heavy bench presses and squat racks" loading="lazy" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4 class="gallery-item-title">Lifting Zone</h4>
+                                    <p class="gallery-item-cat">Squat Racks & Bench Presses</p>
+                                </div>
+                                <button class="gallery-zoom-btn" aria-label="Zoom Image">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zoom-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 (Strength - Cables) -->
+                    <div class="gallery-item" data-category="strength">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/bst_hero.jpg" alt="Cable crossover machines with neon BEAST sign" loading="lazy" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4 class="gallery-item-title">Cable Arena</h4>
+                                    <p class="gallery-item-cat">Full Multi-cable Pulley Station</p>
+                                </div>
+                                <button class="gallery-zoom-btn" aria-label="Zoom Image">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zoom-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 (Strength - Chest Press Floor) -->
+                    <div class="gallery-item" data-category="strength">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/bst_flags.jpg" alt="Chest press machines with flags on wall" loading="lazy" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4 class="gallery-item-title">Plate-Loaded Zone</h4>
+                                    <p class="gallery-item-cat">Chest Presses & Lifting Platforms</p>
+                                </div>
+                                <button class="gallery-zoom-btn" aria-label="Zoom Image">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zoom-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 (Strength - Leg Press Floor) -->
+                    <div class="gallery-item" data-category="strength">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/bst_legpress_gal.jpg" alt="Heavy plate loaded leg press machine" loading="lazy" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4 class="gallery-item-title">Leg Press Deck</h4>
+                                    <p class="gallery-item-cat">Incline Leg Presses & Squat Rigs</p>
+                                </div>
+                                <button class="gallery-zoom-btn" aria-label="Zoom Image">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zoom-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 (Strength - Pulldown Arena) -->
+                    <div class="gallery-item" data-category="strength">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/bst_pulldown.jpg" alt="Cable pulldown machine and strength equipment" loading="lazy" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4 class="gallery-item-title">Pulldown Deck</h4>
+                                    <p class="gallery-item-cat">Heavy Cable Pulldowns & Back Trainers</p>
+                                </div>
+                                <button class="gallery-zoom-btn" aria-label="Zoom Image">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zoom-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 (Strength - Leg Curls) -->
+                    <div class="gallery-item" data-category="strength">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/bst_curls.jpg" alt="Leg curl machine with blue outline BST logo on wall" loading="lazy" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4 class="gallery-item-title">BST Hamstring Deck</h4>
+                                    <p class="gallery-item-cat">Leg Curl & Extension Machines</p>
+                                </div>
+                                <button class="gallery-zoom-btn" aria-label="Zoom Image">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zoom-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 9 (Strength - PL200 Leg Press) -->
+                    <div class="gallery-item" data-category="strength">
+                        <div class="gallery-image-wrapper">
+                            <img src="assets/bst_press200.jpg" alt="Plate loaded PL200 leg press facing window" loading="lazy" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4 class="gallery-item-title">PL200 Strength Press</h4>
+                                    <p class="gallery-item-cat">Plate-Loaded Leg Training</p>
+                                </div>
+                                <button class="gallery-zoom-btn" aria-label="Zoom Image">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="zoom-icon">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rates / Memberships Section -->
+        <section class="rates-section" id="rates">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Rates & Plans</span>
+                    <h2 class="section-title">CHOOSE YOUR POTENTIAL</h2>
+                    <p class="section-desc">Transparent pricing with no hidden registration costs. Cancel at any time.</p>
+                    
+                    <!-- Billing Toggle Switch -->
+                    <div class="billing-toggle-container">
+                        <span class="billing-label" id="label-monthly">Individual Rate</span>
+                        <button class="billing-toggle" id="billing-toggle" aria-label="Toggle billing frequency">
+                            <span class="billing-circle"></span>
+                        </button>
+                        <span class="billing-label" id="label-yearly">Family Rate <span class="discount-badge">2+ People</span></span>
+                    </div>
+                </div>
+
+                <div class="rates-grid">
+                    <!-- Plan 1 (Base - Monthly) -->
+                    <div class="pricing-card glow-card">
+                        <div class="bento-glow"></div>
+                        <div class="card-badge" style="background: #00E5FF; color: #0A0A0C;">June Special: 30€</div>
+                        <div class="card-inner">
+                            <h3 class="plan-name">MONTHLY</h3>
+                            <p class="plan-subtitle">MENSUAL ACCESS</p>
+                            <div class="price-container">
+                                <span class="price-value" data-monthly="45" data-yearly="40">45</span>
+                                <span class="currency">€</span>
+                                <span class="billing-period">/ month</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li class="promo-feature" style="color: #00E5FF; font-weight: bold;">
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #00E5FF;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Mes de Junio: 30€ Special Promotion
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Sala fitness equipamiento premium
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Clases dirigidas para todos los niveles
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Asesoramiento personalizado
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Sin Matrícula (Train commitment free)
+                                </li>
+                            </ul>
+                            <a href="#contact" class="btn btn-block btn-outline">Select Monthly</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 2 (Elite - Quarterly) -->
+                    <div class="pricing-card recommended glow-card">
+                        <div class="bento-glow"></div>
+                        <div class="card-badge">Best Value</div>
+                        <div class="card-inner">
+                            <h3 class="plan-name">QUARTERLY</h3>
+                            <p class="plan-subtitle">TRIMESTRAL ACCESS</p>
+                            <div class="price-container">
+                                <span class="price-value" data-monthly="120" data-yearly="105">120</span>
+                                <span class="currency">€</span>
+                                <span class="billing-period">/ 3 months</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    All standard features included
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Equivalent to <b>40€/mo</b> (Individual)
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Equivalent to <b>35€/mo</b> (Family Rate)
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Save on long-term training
+                                </li>
+                            </ul>
+                            <a href="#contact" class="btn btn-block btn-primary-gradient">Select Quarterly</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan 3 (VIP - Annual) -->
+                    <div class="pricing-card glow-card">
+                        <div class="bento-glow"></div>
+                        <div class="card-inner">
+                            <h3 class="plan-name">ANNUAL</h3>
+                            <p class="plan-subtitle">ANUAL ACCESS</p>
+                            <div class="price-container">
+                                <span class="price-value" data-monthly="400" data-yearly="360">400</span>
+                                <span class="currency">€</span>
+                                <span class="billing-period">/ 12 months</span>
+                            </div>
+                            <ul class="plan-features">
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    12 full months of gym access
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Equivalent to only <b>33.3€/mo</b> (Individual)
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Equivalent to only <b>30€/mo</b> (Family Rate)
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Maximum pricing optimization
+                                </li>
+                            </ul>
+                            <a href="#contact" class="btn btn-block btn-outline">Select Annual</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <!-- Left: Contact Details -->
+                    <div class="contact-info-panel">
+                        <div>
+                            <span class="section-tag text-left">Connect with Us</span>
+                            <h2 class="contact-heading">BEGIN YOUR <br>EVOLUTION</h2>
+                            <p class="contact-lead-text">Drop by for a tour of our sanctuary or send us an inquiry. Our coaches are ready to plan your launch.</p>
+                        </div>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <h4>Sanctuary Address</h4>
+                                    <p>Carrer Orihuela, 15, 03203 Elx, Alicante</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <h4>Electronic Mail</h4>
+                                    <p>elevate@beastfit.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <h4>Direct Call</h4>
+                                    <p>+1 (555) 732-BEAST</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <h4>Sanctuary Hours</h4>
+                                    <p>Mon - Fri: 06:00 - 22:00 <br> Sat - Sun: 08:00 - 14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-form-panel">
+                        <form id="gym-contact-form" class="contact-form">
+                            <h3 class="form-title">Request Guest Pass</h3>
+                            <div class="form-grid">
+                                <div class="input-group">
+                                    <input type="text" id="form-name" required placeholder=" ">
+                                    <label for="form-name">Full Name</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" id="form-email" required placeholder=" ">
+                                    <label for="form-email">Email Address</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="tel" id="form-phone" required placeholder=" ">
+                                    <label for="form-phone">Phone Number</label>
+                                </div>
+                                <div class="input-group">
+                                    <select id="form-tier" required>
+                                        <option value="" disabled selected hidden></option>
+                                        <option value="base">Base Access Plan</option>
+                                        <option value="elite">Elite Performance Plan</option>
+                                        <option value="vip">VIP Unlimited Access</option>
+                                        <option value="tour">Just Want a Tour First</option>
+                                    </select>
+                                    <label for="form-tier">Membership Tier</label>
+                                </div>
+                                <div class="input-group full-width">
+                                    <textarea id="form-message" required placeholder=" " rows="4"></textarea>
+                                    <label for="form-message">Special Training Requests or Goals</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-primary-gradient shadow-pulse">Submit Request</button>
+                            <p class="form-feedback" id="form-feedback-message"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/logo_mark.jpg" alt="Beast Training Center Logo" class="logo-img">
+                    <span class="logo-text">BEAST <span class="gradient-text">TRAINING CENTER</span></span>
+                </a>
+                <p class="footer-desc">Forging elite athleticism, recovery, and lifestyle integration under one architectural masterpiece.</p>
+            </div>
+            
+            <div class="footer-links-group">
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-group">
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#rates">Rates & plans</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-group">
+                <h4 class="footer-title">Social Focus</h4>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BEAST Training Center Ltd. All rights reserved. Calibrated for elite athletes.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-arrow arrow-left" id="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+        <div class="lightbox-content-wrapper">
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption">
+                <h4 class="lightbox-title" id="lightbox-title">Zone Details</h4>
+                <p class="lightbox-desc" id="lightbox-desc">Category information here.</p>
+            </div>
+        </div>
+        <button class="lightbox-arrow arrow-right" id="lightbox-next" aria-label="Next Image">&#10095;</button>
+    </div>
+
+    <!-- Main JavaScript Link -->
+    <script src="app.js"></script>
+</body>
+</html>
