@@ -1723,14 +1723,40 @@ li {
 
     .hero-section {
         background-attachment: scroll;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 0;
+        align-items: stretch;
+    }
+
+    .hero-container {
+        margin: auto 0;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .hero-badge {
+        font-size: 9px;
+        letter-spacing: 1px;
+        padding: 4px 10px;
+        margin-bottom: 16px;
     }
 
     .hero-title {
-        letter-spacing: -2px;
+        font-size: clamp(30px, 8vw, 48px);
+        letter-spacing: -1.5px;
+        line-height: 1.0;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        margin-bottom: 28px;
     }
 
     .hero-buttons {
         flex-direction: column;
+        gap: 12px;
     }
 
     .hero-buttons .btn {
@@ -1739,13 +1765,25 @@ li {
 
     .hero-stats-bar {
         position: relative;
-        padding: 30px 0;
+        width: 100%;
+        padding: 24px 20px;
+        background-color: rgba(5, 5, 7, 0.95);
+        border-top: 1px solid var(--border-color);
     }
 
     .stats-bar-container {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
+    }
+
+    /* General Section Padding Reduction */
+    .features-section,
+    .schedule-section,
+    .gallery-section,
+    .rates-section,
+    .contact-section {
+        padding: 70px 0;
     }
 
     /* Bento Grid Mobile wrap */
@@ -1755,6 +1793,10 @@ li {
 
     .bento-cell.col-span-2 {
         grid-column: span 1;
+    }
+
+    .bento-cell {
+        padding: 24px 20px;
     }
 
     /* Timetable list mobile wrap */
@@ -1777,10 +1819,24 @@ li {
         margin-top: 10px;
     }
 
+    /* Pricing card mobile wrap */
     .rates-grid {
         grid-template-columns: 1fr;
         max-width: 420px;
         margin: 40px auto 0 auto;
+    }
+
+    .pricing-card .card-inner {
+        padding: 36px 20px;
+    }
+
+    .plan-features li {
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+    .check-icon {
+        margin-top: 2px;
     }
 
     .form-grid {
@@ -1822,6 +1878,27 @@ li {
 
     .header-controls .btn-header {
         display: none;
+    }
+
+    .section-title {
+        font-size: 28px;
+        letter-spacing: -1px;
+    }
+
+    .features-section,
+    .schedule-section,
+    .gallery-section,
+    .rates-section,
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .billing-toggle-container {
+        gap: 10px;
+    }
+
+    .billing-label {
+        font-size: 11px;
     }
 
     .contact-info-panel, .contact-form-panel {
